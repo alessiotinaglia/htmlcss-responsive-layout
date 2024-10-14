@@ -7,8 +7,9 @@
 
 /* colori */
 :root {
+    --color-grey: #9F9F9F;;
     --color-white: #ffffff;
-    --color-bg-color: #d9d9d9;
+    --color-bg-color: #F6F5F3;
     --color-primary: #7c69a4;
     --color-dark-text: #4e3969;
     --color-black: #282529;
@@ -47,12 +48,13 @@ h2{
 }
 
 h3{
+    padding-top: 20px;
     font-size: 2em;
 }
 
 h5{
     font-size: 1.3em;
-    padding: 15px 0px;
+    padding: 20px 15px;
 }
 
 .asd{
@@ -74,7 +76,6 @@ header a{
 
 main {
     background-color: var(--color-bg-color);
-    padding: 20px 15px;
 }
 
 
@@ -125,8 +126,9 @@ main ul li{
     color: var(--color-icon-red);    
 }
 
-#presentation{
+.presentation{
     width: 50%;
+   
 }
 
 hr{
@@ -140,7 +142,7 @@ hr{
 
 .font-grey{
     font-size: 1em;
-    color: var(--color-bg-color);
+    color: var(--color-grey);
 }
 
 .box-shadow{
@@ -183,6 +185,17 @@ p{
     flex-direction: column;
 }
 
+.clearfix img {
+    float: left; 
+    margin-right: 15px; 
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* page */
 
 footer{
@@ -210,16 +223,48 @@ footer div ul li a{
     .asd{
         display: none;
     }
-} 
+    
+    main{
+        padding: 0;
+    }
+
+}
 
 @media screen and (min-width: 768px){
+    h1{
+        text-align: left;
+    }    
+    .container{
+        max-width: 680px;
+    }
+    .calc{
+        display: flex;
+    }
+    main section ul{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    main section ul li{
+        width: calc(100% / 3); 
+    }
     main{
-        padding: 40px;
+        padding: 0px;
     }
     .asd{
-        display: block;
+        display: inline-block;
     }
-    
+    main section a{
+        padding: 0;
+        margin: 0;
+    }
+
+    .social a{
+        padding: 12px 50px;
+        border-radius: 25px;
+    }
+
+}   
 
 @media screen and (min-width: 992px){
    
