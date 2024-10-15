@@ -110,19 +110,19 @@ main ul li{
     cursor: pointer;
 }
 
-#facebook{
+.facebook{
     color: var(--color-icon-blue);    
 }
-#twitter{
+.twitter{
     color: var(--color-icon-blue);    
 }
-#instagram{
+.instagram{
     color: var(--color-icon-red);    
 }
-#youtube{
+.youtube{
     color: var(--color-icon-red);    
 }
-#pinterest{
+.pinterest{
     color: var(--color-icon-red);    
 }
 
@@ -213,6 +213,9 @@ footer{
     width: 100%;
     
 }
+.tiramisu{
+    display: none;
+   }
 
 footer div ul li{
     list-style: none;
@@ -267,6 +270,9 @@ footer div ul li a{
     .inl-block{
         display: none;
     }
+    .tiramisu{
+        display: none;
+       }
 
 
     main section a{
@@ -288,6 +294,12 @@ footer div ul li a{
    .container{
     max-width: 900px;
    }
+   footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+   }
    .contenitore{
     display: flex;
     align-items: flex-start;
@@ -307,15 +319,14 @@ footer div ul li a{
    }
    .calc{
     flex-direction: column;
-    display: flex; 
+    display: flex;
    }
-
    main section div ul li{
     display: flex;
    }
    .tiramisu{
     display: block;
-   }  
+   }
    main section ul{
     font-size: 0.9;
     display: flex;
@@ -331,15 +342,4 @@ footer div ul li a{
     .social a span{
         color: var(--color-black);
     }
-    
-
-    
-    
-
-    
-
-   
-     
- 
-
 }
